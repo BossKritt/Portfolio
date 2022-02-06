@@ -1,599 +1,600 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-        <!--==================== UNICONS ====================-->
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--==================== REMIXICON ====================-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
-        <!--==================== FONTAWESOM ====================-->
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-        
-        <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-        
-        <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="assets/css/style.css">
+    <!--==================== REMIXICON ====================-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
-        <title>Responsive Portfolio Website</title>
-    </head>
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav_logo">BossKritt</a>
+    <!--==================== FONTAWESOM ====================-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
-                <div class="nav_menu" id="nav-menu">
-                    <ul class="nav_list grid">
-                        <li class="nav_item">
-                            <a href="#home" class="nav_link active-link">
-                                <i class="uil uil-estate nav_icon"></i> Home
-                            </a>
-                        </li>
-                        <li class="nav_item">
-                            <a href="#about" class="nav_link">
-                                <i class="uil uil-user nav_icon"></i> About
-                            </a>
-                        </li>
-                        <li class="nav_item">
-                            <a href="#skills" class="nav_link">
-                                <i class="uil uil-file-alt nav_icon"></i> Skills
-                            </a>
-                        </li>
-                        <li class="nav_item">
-                            <a href="#favorites" class="nav_link">
-                                <i class="uil uil-thumbs-up nav_icon"></i> Favorite
-                            </a>
-                        </li>
-                        <li class="nav_item">
-                            <a href="#portfolio" class="nav_link">
-                                <i class="uil uil-scenery nav_icon"></i> Portfolio
-                            </a>
-                        </li>
-                        <li class="nav_item">
-                            <a href="#contact" class="nav_link">
-                                <i class="uil uil-comment-alt-message nav_icon"></i> Contact
-                            </a>
-                        </li>
-                    </ul>
-                    <i class="uil uil-times nav_close" id="nav-close"></i>
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Responsive Portfolio Website</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav_logo">BossKritt</a>
+
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list grid">
+                    <li class="nav_item">
+                        <a href="#home" class="nav_link active-link">
+                            <i class="uil uil-estate nav_icon"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#about" class="nav_link">
+                            <i class="uil uil-user nav_icon"></i> About
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#skills" class="nav_link">
+                            <i class="uil uil-file-alt nav_icon"></i> Skills
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#favorites" class="nav_link">
+                            <i class="uil uil-thumbs-up nav_icon"></i> Favorite
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#portfolio" class="nav_link">
+                            <i class="uil uil-scenery nav_icon"></i> Portfolio
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#contact" class="nav_link">
+                            <i class="uil uil-comment-alt-message nav_icon"></i> Contact
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav_close" id="nav-close"></i>
+            </div>
+            <div class="nav_btns">
+                <!-- Theme change button -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
                 </div>
-                <div class="nav_btns">
-                    <!-- Theme change button -->
-                    <i class="uil uil-moon change-theme" id="theme-button"></i>
-                    <div class="nav_toggle" id="nav-toggle">
-                        <i class="uil uil-apps"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home_container container grid">
+                <div class="home_content grid">
+                    <div class="home_social">
+                        <a href="https://www.linkedin.com/in/Krittametchanphet/" target="_blank"
+                            class="home_social-icon">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                        <a href="https://github.com/BossKritt" target="_blank" class="home_social-icon">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                        <a href="https://www.facebook.com/Krittamet.Chanphet" target="_blank" class="home_social-icon">
+                            <i class="uil uil-facebook-f"></i>
+                        </a>
                     </div>
-                </div>
-            </nav>
-        </header>
-
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-                <div class="home_container container grid">
-                    <div class="home_content grid">
-                        <div class="home_social">
-                            <a href="https://www.linkedin.com/in/Krittametchanphet/" target="_blank" class="home_social-icon">
-                                <i class="uil uil-linkedin-alt"></i>
-                            </a>
-                            <a href="https://github.com/BossKritt" target="_blank" class="home_social-icon">
-                                <i class="uil uil-github-alt"></i>
-                            </a>
-                            <a href="https://www.facebook.com/Krittamet.Chanphet" target="_blank" class="home_social-icon">
-                                <i class="uil uil-facebook-f"></i>
-                            </a>
-                        </div>
-                        <div class="home_img">
-                            <svg class="home_blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <mask id="mask0" mask-type="alpha">
-                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                    <div class="home_img">
+                        <svg class="home_blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
                                     130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
                                     97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                </mask>
-                                <g mask="url(#mask0)">
-                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
                                     165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
                                     129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                    <image class="home_blob-img" x=-50 y=-60 xlink:href="assets/img/profile.png"/>
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="home_data">
-                            <h1 class="home_title">Hi, I'm Krittamet</h1>
-                            <h3 class="home_subtitle">Frontend Developer & UX/UI Designer</h3>
-                            <p class="home_description">I'm Krittamet Chanphet from Thailand, and I want to be a good developer in the future</p>
-                            <a href="#contact" class="button button_flex">
-                                Contact Me <i class="uil uil-message button_icon"></i>
-                            </a>
-                        </div>
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                                <image class="home_blob-img" x=-50 y=-60 xlink:href="assets/img/profile.png" />
+                            </g>
+                        </svg>
                     </div>
-                    <div class="home_scroll">
-                        <a href="#about" class="home_scroll-button button_flex">
-                            <i class="uil uil-mouse-alt home_scroll-mouse"></i>
-                            <span class="home_scroll-name">Scroll down</span>
-                            <i class="uil uil-arrow-down home_scroll-arrow"></i>
+                    <div class="home_data">
+                        <h1 class="home_title">Hi, I'm Krittamet</h1>
+                        <h3 class="home_subtitle">Frontend Developer & UX/UI Designer</h3>
+                        <p class="home_description">I'm Krittamet Chanphet from Thailand, and I want to be a good
+                            developer in the future</p>
+                        <a href="#contact" class="button button_flex">
+                            Contact Me <i class="uil uil-message button_icon"></i>
                         </a>
                     </div>
                 </div>
-            </section>
-
-            <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
-                <h2 class="section_title">About Me</h2>
-                <span class="section_subtitle">My introduction</span>
-                <div class="about_container container grid">
-                    <img src="assets/img/aboutme.jpg" alt="" class="about_img">
-                    <div class="about_data">
-                        <p class="about_description">Hi I am a web developer and design. I am also have experience working with workmate. I like to learn about new technology and have knowledge of program language and web developer</p>
-                        <div class="about_info">
-                            <div>
-                                <span class="about_info-icon"><i class="uil uil-folder"></i></span>
-                                <span class="about_info-title">02</span>
-                                <span class="about_info-name">Currently <br> projects</span>
-                            </div>
-                            <div>
-                                <span class="about_info-icon"><i class="uil uil-folder-check"></i></span>
-                                <span class="about_info-title">04</span>
-                                <span class="about_info-name">Completed <br> projects</span>
-                            </div>
-                            <div>
-                                <span class="about_info-icon"><i class="uil uil-award"></i></span>
-                                <span class="about_info-title">03</span>
-                                <span class="about_info-name">Certificate</span>
-                            </div>
-                        </div>
-                        <div class="about_button">
-                            <a download="" href="assets/img/Krittamet-Chanphet-Resume.pdf" class="button button_flex">
-                                Download Resume<i class="uil uil-file-download button_icon"></i>
-                            </a>
-                            
-                        </div>
-                    </div>
+                <div class="home_scroll">
+                    <a href="#about" class="home_scroll-button button_flex">
+                        <i class="uil uil-mouse-alt home_scroll-mouse"></i>
+                        <span class="home_scroll-name">Scroll down</span>
+                        <i class="uil uil-arrow-down home_scroll-arrow"></i>
+                    </a>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills">
-                <h2 class="section_title">Skills</h2>
-                <span class="section_subtitle">My technical</span>
-                <div class="skills_container container grid">
-                    <!--==================== SKILLS 1 ====================-->
-                    <div class="skills_content skills_open">
-                        <div class="skills_header">
-                            <i class="uil uil-brackets-curly skills_icon-header"></i>
-                            <div>
-                                <h1 class="skills_title-header">Frontend developer</h1>
-                            </div>
-                            <i class="uil uil-angle-down skills_arrow"></i>
-                        </div>
-                        <div class="skills_list grid">
-                            <div class="skills_data">
-                                <div class="skills_info">
-                                    <div class="skills_group">
-                                        <div>
-                                            <div class="skills_icon"><i class="uil uil-html5"></i></div>
-                                            <div class="skills_title">HTML</div>
-                                        </div>
-                                        <div>
-                                            <span class="skills_icon"><i class="fab fa-css3-alt"></i></span>
-                                            <span class="skills_title">CSS</span>
-                                        </div>
-                                        <div>
-                                            <span class="skills_icon"><i class="fab fa-js-square"></i></span>
-                                            <span class="skills_title">Javascript</span>
-                                        </div>
-                                    </div>
-                                    <div class="skills_group">
-                                        <div>
-                                            <span class="skills_icon"><i class="fab fa-react"></i></span>
-                                            <span class="skills_title">React</span>
-                                        </div>
-                                        <div>
-                                            <span class="skills_icon"><i class="fab fa-vuejs"></i></span>
-                                            <span class="skills_title">Vue</span>
-                                        </div>
-                                        <div>
-                                            <span class="skills_icon"><i class="fab fa-angular"></i></span>
-                                            <span class="skills_title">Angular</span>
-                                        </div>
-                                    </div>
-                                    <div class="skills_group">
-                                        <div>
-                                            <span class="skills_icon"><i class="fab fa-wordpress"></i></span>
-                                            <span class="skills_title">Wordpress</span>
-                                        </div>
-                                        <div>
-                                            <span class="skills_icon"><i class="ri-flutter-fill"></i></span>
-                                            <span class="skills_title">Flutter</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--==================== SKILLS 2 ====================-->
-                    <div class="skills_content skills_close">
-                        <div class="skills_header">
-                            <i class="uil uil-server skills_icon-header"></i>
-                            <div>
-                                <h1 class="skills_title-header">Backend developer</h1>
-                            </div>
-                            <i class="uil uil-angle-down skills_arrow"></i>
-                        </div>
-                        <div class="skills_list grid">
-                            <div class="skills_data">
-                                <div class="skills_info">
-                                    <div class="skills_group">
-                                        <div>
-                                            <span class="skills_icon"><i class="fab fa-php"></i></span>
-                                            <span class="skills_title">PHP</span>
-                                        </div>
-                                        <div>
-                                            <span class="skills_icon"><i class="fab fa-java"></i></span>
-                                            <span class="skills_title">Java</span>
-                                        </div>
-                                        <div>
-                                            <span class="skills_icon"><i class="fas fa-file-code"></i></span>
-                                            <span class="skills_title">C/C#/C++</span>
-                                        </div>
-                                    </div>
-                                    <div class="skills_group">
-                                        <div>
-                                            <span class="skills_icon"><i class="fas fa-file-code"></i></span>
-                                            <span class="skills_title">SQL</span>
-                                        </div>
-                                        <div>
-                                            <span class="skills_icon"><i class="fab fa-node"></i></span>
-                                            <span class="skills_title">Node</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--==================== SKILLS 3 ====================-->
-                    <div class="skills_content skills_close">
-                        <div class="skills_header">
-                            <i class="uil uil-palette skills_icon-header"></i>
-                            <div>
-                                <h1 class="skills_title-header">Design</h1>
-                            </div>
-                            <i class="uil uil-angle-down skills_arrow"></i>
-                        </div>
-                        <div class="skills_list grid">
-                            <div class="skills_data">
-                                <div class="skills_info">
-                                    <div class="skills_group">
-                                        <div>
-                                            <span class="skills_icon"><i class="fab fa-figma"></i></span>
-                                            <span class="skills_title">Figma</span>
-                                        </div>
-                                        <div>
-                                            <span class="skills_icon"><i class="uil uil-browser"></i></span>
-                                            <span class="skills_title">Canva</span>
-                                        </div>
-                                        <div>
-                                            <span class="skills_icon"><i class="uil uil-adobe"></i></span>
-                                            <span class="skills_title">Photoshop</span>
-                                        </div>
-                                    </div>
-                                    <div class="skills_group">
-                                        <div>
-                                            <span class="skills_icon"><i class="uil uil-adobe"></i></span>
-                                            <span class="skills_title">Illustrator</span>
-                                        </div>
-                                        <div>
-                                            <span class="skills_icon"><i class="uil uil-adobe"></i></span>
-                                            <span class="skills_title">XD</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--==================== QUALIFICATION ====================-->
-            <section class="qualification section">
-                <h2 class="section_title">Qualification</h2>
-                <span class="section_subtitle">My personal journey</span>
-                <div class="qualification_container container">
-                    <div class="qualification_tabs">
-                        <div class="qualification_button button_flex">
-                            <i class="uil uil-graduation-cap qualification_icon"></i>
-                            Education
-                        </div>
-                        <div class="qualification_button button_flex">
-                            <i class="uil uil-briefcase-alt qualification_icon"></i>
-                            Intern
-                        </div>
-                    </div>
-                    <div class="qualification_sections">
-                        <!--==================== QUALIFICATION CONTENT ====================-->
-                        <div class="qualification_content">
-                            <!--==================== QUALIFICATION 1====================-->
-                            <div class="qualification_data">
-                                <div>
-                                    <h3 class="qualification_title">Math - Eng</h3>
-                                    <span class="qualification_subtitle">Suankularb Wittayalai <br>Rangist School</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2014 - 2016
-                                    </div>
-                                </div>
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-                            </div>
-                            <!--==================== QUALIFICATION 2====================-->
-                            <div class="qualification_data">
-                                <div></div>
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <span class="qualification_line"></span>
-                                </div>
-                                <div>
-                                    <h3 class="qualification_title">Student Intern</h3>
-                                    <span class="qualification_subtitle">Web application programmer <br>Mango Consultant co.ltd</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        June 2021 - Sep 2021
-                                    </div>
-                                </div>
-                            </div>
-                            <!--==================== QUALIFICATION 3====================-->
-                            <div class="qualification_data">
-                                <div>
-                                    <h3 class="qualification_title">Computer Science</h3>
-                                    <span class="qualification_subtitle">Rajamangala University <br>of Technology Thanyaburi</span>
-                                    <div class="qualification_calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2018 - Now
-                                    </div>
-                                </div>
-                                <div>
-                                    <span class="qualification_rounder"></span>
-                                    <!-- <span class="qualification_line"></span> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            <!--==================== FAVORITE ====================-->
-            <section class="favorites section" id="favorites">
-                <h2 class="section_title">Favorite</h2>
-                <span class="section_subtitle">What i like </span>
-                <div class="favorites_container container grid">
-                    <!--==================== FAVORITE 1====================-->
-                    <div class="favorites_content">
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <h2 class="section_title">About Me</h2>
+            <span class="section_subtitle">My introduction</span>
+            <div class="about_container container grid">
+                <img src="assets/img/aboutme.jpg" alt="" class="about_img">
+                <div class="about_data">
+                    <p class="about_description">Hi I am a web developer and design. I am also have experience working
+                        with workmate. I like to learn about new technology and have knowledge of program language and
+                        web developer</p>
+                    <div class="about_info">
                         <div>
-                            <i class="uil uil-web-grid favorites_icon"></i>
-                            <h3 class="favorites_title">UX/UI <br>Designer</h3>
+                            <span class="about_info-icon"><i class="uil uil-folder"></i></span>
+                            <span class="about_info-title">02</span>
+                            <span class="about_info-name">Currently <br> projects</span>
                         </div>
-                        <span class="button button_flex button_small button_link favorites_button">
-                            View More
-                            <i class="uil uil-arrow-right button_icon"></i>
-                        </span>
-                        <div class="favorites_modal">
-                            <div class="favorites_modal-content">
-                                <h4 class="favorites_modal-title">UX/UI <br>Designer</h4>
-                                <i class="uil uil-times favorites_modal-close"></i>
-                                <ul class="favorites_modal-favorites grid">
-                                    <li class="favorites_modal-favorite">
-                                        <i class="uil uil-check-circle favorites_modal-icon"></i>
-                                        <p>I develop the user interface(Web/Mobile).</p>
-                                    </li>
-                                    <li class="favorites_modal-favorite">
-                                        <i class="uil uil-check-circle favorites_modal-icon"></i>
-                                        <p>Create ux element interactions.</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!--==================== FAVORITE 2====================-->
-                    <div class="favorites_content">
                         <div>
-                            <i class="uil uil-arrow favorites_icon"></i>
-                            <h3 class="favorites_title">Frontend <br>Developer</h3>
+                            <span class="about_info-icon"><i class="uil uil-folder-check"></i></span>
+                            <span class="about_info-title">04</span>
+                            <span class="about_info-name">Completed <br> projects</span>
                         </div>
-                        <span class="button button_flex button_small button_link favorites_button">
-                            View More
-                            <i class="uil uil-arrow-right button_icon"></i>
-                        </span>
-                        <div class="favorites_modal">
-                            <div class="favorites_modal-content">
-                                <h4 class="favorites_modal-title">Frontend <br>Developer</h4>
-                                <i class="uil uil-times favorites_modal-close"></i>
-                                <ul class="favorites_modal-favorites grid">
-                                    <li class="favorites_modal-favorite">
-                                        <i class="uil uil-check-circle favorites_modal-icon"></i>
-                                        <p>I develop the user interface(Web/Mobile).</p>
-                                    </li>
-                                    <li class="favorites_modal-favorite">
-                                        <i class="uil uil-check-circle favorites_modal-icon"></i>
-                                        <p>Web/Mobile page devlopment.</p>
-                                    </li>
-                                    <li class="favorites_modal-favorite">
-                                        <i class="uil uil-check-circle favorites_modal-icon"></i>
-                                        <p>I create ux element interactions.</p>
-                                    </li>
-                                </ul>
+                        <div>
+                            <span class="about_info-icon"><i class="uil uil-award"></i></span>
+                            <span class="about_info-title">03</span>
+                            <span class="about_info-name">Certificate</span>
+                        </div>
+                    </div>
+                    <div class="about_button">
+                        <a download="" href="assets/img/Krittamet-Chanphet-Resume.pdf" class="button button_flex">
+                            Download Resume<i class="uil uil-file-download button_icon"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== SKILLS ====================-->
+        <section class="skills section" id="skills">
+            <h2 class="section_title">Skills</h2>
+            <span class="section_subtitle">My technical</span>
+            <div class="skills_container container grid">
+                <!--==================== SKILLS 1 ====================-->
+                <div class="skills_content skills_open">
+                    <div class="skills_header">
+                        <i class="uil uil-brackets-curly skills_icon-header"></i>
+                        <div>
+                            <h1 class="skills_title-header">Frontend developer</h1>
+                        </div>
+                        <i class="uil uil-angle-down skills_arrow"></i>
+                    </div>
+                    <div class="skills_list grid">
+                        <div class="skills_data">
+                            <div class="skills_info">
+                                <div class="skills_group">
+                                    <div>
+                                        <div class="skills_icon"><i class="uil uil-html5"></i></div>
+                                        <div class="skills_title">HTML</div>
+                                    </div>
+                                    <div>
+                                        <span class="skills_icon"><i class="fab fa-css3-alt"></i></span>
+                                        <span class="skills_title">CSS</span>
+                                    </div>
+                                    <div>
+                                        <span class="skills_icon"><i class="fab fa-js-square"></i></span>
+                                        <span class="skills_title">Javascript</span>
+                                    </div>
+                                </div>
+                                <div class="skills_group">
+                                    <div>
+                                        <span class="skills_icon"><i class="fab fa-react"></i></span>
+                                        <span class="skills_title">React</span>
+                                    </div>
+                                    <div>
+                                        <span class="skills_icon"><i class="fab fa-vuejs"></i></span>
+                                        <span class="skills_title">Vue</span>
+                                    </div>
+                                    <div>
+                                        <span class="skills_icon"><i class="fab fa-angular"></i></span>
+                                        <span class="skills_title">Angular</span>
+                                    </div>
+                                </div>
+                                <div class="skills_group">
+                                    <div>
+                                        <span class="skills_icon"><i class="fab fa-wordpress"></i></span>
+                                        <span class="skills_title">Wordpress</span>
+                                    </div>
+                                    <div>
+                                        <span class="skills_icon"><i class="ri-flutter-fill"></i></span>
+                                        <span class="skills_title">Flutter</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-
-            <!--==================== PORTFOLIO ====================-->
-            <section class="portfolio section" id="portfolio">
-                <h2 class="section_title">Portfolio</h2>
-                <span class="section_subtitle">Most recent work</span>
-                <div class="portfolio_container container swiper-container">
-                    <div class="swiper-wrapper">
-                        <!--==================== PORTFOLIO 1====================-->
-                        <div class="portfolio_content grid swiper-slide">
-                            <img src="assets/img/port2.png" alt="" class="portfolio_img">
-                            <div class="portfolio_data">
-                                <h3 class="portfolio_title">Covid-19 Website</h3>
-                                <p class="portfolio_description">This website show detail about Covid-19 in Thailand adaptable to all device.</p>
-                                <a href="https://bosskritt.github.io/COVID19" target="_blank" class="button button_flex button_small portfolio_button">
-                                    Visit this website
-                                    <i class="uil uil-arrow-right button_icon"></i>
-                                </a>
+                <!--==================== SKILLS 2 ====================-->
+                <div class="skills_content skills_close">
+                    <div class="skills_header">
+                        <i class="uil uil-server skills_icon-header"></i>
+                        <div>
+                            <h1 class="skills_title-header">Backend developer</h1>
+                        </div>
+                        <i class="uil uil-angle-down skills_arrow"></i>
+                    </div>
+                    <div class="skills_list grid">
+                        <div class="skills_data">
+                            <div class="skills_info">
+                                <div class="skills_group">
+                                    <div>
+                                        <span class="skills_icon"><i class="fab fa-php"></i></span>
+                                        <span class="skills_title">PHP</span>
+                                    </div>
+                                    <div>
+                                        <span class="skills_icon"><i class="fab fa-java"></i></span>
+                                        <span class="skills_title">Java</span>
+                                    </div>
+                                    <div>
+                                        <span class="skills_icon"><i class="fas fa-file-code"></i></span>
+                                        <span class="skills_title">C/C#/C++</span>
+                                    </div>
+                                </div>
+                                <div class="skills_group">
+                                    <div>
+                                        <span class="skills_icon"><i class="fas fa-file-code"></i></span>
+                                        <span class="skills_title">SQL</span>
+                                    </div>
+                                    <div>
+                                        <span class="skills_icon"><i class="fab fa-node"></i></span>
+                                        <span class="skills_title">Node</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <!--==================== PORTFOLIO 2====================-->
-                        <div class="portfolio_content grid swiper-slide">
-                            <img src="assets/img/port1.png" alt="" class="portfolio_img">
-                            <div class="portfolio_data">
-                                <h3 class="portfolio_title">Website Student Committee</h3>
-                                <p class="portfolio_description">This website show about member in student committee. This is my first website.</p>
-                                <a href="https://bosskritt.github.io/SC19/" target="_blank" class="button button_flex button_small portfolio_button">
-                                    Visit this website
-                                    <i class="uil uil-arrow-right button_icon"></i>
-                                </a>
-                            </div>
-                        </div>
                     </div>
-                    <!-- Add Arrows -->
-                    <div class="swiper-button-next">
-                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-                    </div>
-                    <div class="swiper-button-prev">
-                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-                    </div>
-                    <!-- Add Pagination -->
-                    <div class="swiper-pagination"></div>
                 </div>
-            </section>
+                <!--==================== SKILLS 3 ====================-->
+                <div class="skills_content skills_close">
+                    <div class="skills_header">
+                        <i class="uil uil-palette skills_icon-header"></i>
+                        <div>
+                            <h1 class="skills_title-header">Design</h1>
+                        </div>
+                        <i class="uil uil-angle-down skills_arrow"></i>
+                    </div>
+                    <div class="skills_list grid">
+                        <div class="skills_data">
+                            <div class="skills_info">
+                                <div class="skills_group">
+                                    <div>
+                                        <span class="skills_icon"><i class="fab fa-figma"></i></span>
+                                        <span class="skills_title">Figma</span>
+                                    </div>
+                                    <div>
+                                        <span class="skills_icon"><i class="uil uil-browser"></i></span>
+                                        <span class="skills_title">Canva</span>
+                                    </div>
+                                    <div>
+                                        <span class="skills_icon"><i class="uil uil-adobe"></i></span>
+                                        <span class="skills_title">Photoshop</span>
+                                    </div>
+                                </div>
+                                <div class="skills_group">
+                                    <div>
+                                        <span class="skills_icon"><i class="uil uil-adobe"></i></span>
+                                        <span class="skills_title">Illustrator</span>
+                                    </div>
+                                    <div>
+                                        <span class="skills_icon"><i class="uil uil-adobe"></i></span>
+                                        <span class="skills_title">XD</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <!--==================== PROJECT IN MIND ====================-->
-            <!-- <section class="project section">
+        <!--==================== QUALIFICATION ====================-->
+        <section class="qualification section">
+            <h2 class="section_title">Qualification</h2>
+            <span class="section_subtitle">My personal journey</span>
+            <div class="qualification_container container">
+                <div class="qualification_tabs">
+                    <div class="qualification_button button_flex">
+                        <i class="uil uil-graduation-cap qualification_icon"></i>
+                        Education
+                    </div>
+                    <div class="qualification_button button_flex">
+                        <i class="uil uil-briefcase-alt qualification_icon"></i>
+                        Intern
+                    </div>
+                </div>
+                <div class="qualification_sections">
+                    <!--==================== QUALIFICATION CONTENT ====================-->
+                    <div class="qualification_content">
+                        <!--==================== QUALIFICATION 1====================-->
+                        <div class="qualification_data">
+                            <div>
+                                <h3 class="qualification_title">Math - Eng</h3>
+                                <span class="qualification_subtitle">Suankularb Wittayalai <br>Rangist School</span>
+                                <div class="qualification_calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2014 - 2016
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <span class="qualification_line"></span>
+                            </div>
+                        </div>
+                        <!--==================== QUALIFICATION 2====================-->
+                        <div class="qualification_data">
+                            <div></div>
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <span class="qualification_line"></span>
+                            </div>
+                            <div>
+                                <h3 class="qualification_title">Student Intern</h3>
+                                <span class="qualification_subtitle">Web application programmer <br>Mango Consultant
+                                    co.ltd</span>
+                                <div class="qualification_calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    June 2021 - Sep 2021
+                                </div>
+                            </div>
+                        </div>
+                        <!--==================== QUALIFICATION 3====================-->
+                        <div class="qualification_data">
+                            <div>
+                                <h3 class="qualification_title">Computer Science</h3>
+                                <span class="qualification_subtitle">Rajamangala University <br>of Technology
+                                    Thanyaburi</span>
+                                <div class="qualification_calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2018 - Now
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <!-- <span class="qualification_line"></span> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-
-            </section> -->
-
-            <!--==================== TESTIMONIAL ====================-->
-            <!-- <section class="testimonial section">
-                
-
-            </section> -->
-
-            <!--==================== CONTACT ME ====================-->
-            <section class="contact section" id="contact">
-                <h2 class="section_title">Contact Me</h2>
-                <span class="section_subtitle">Get in touch</span>
-                <div class="contact_container container grid">
+        <!--==================== FAVORITE ====================-->
+        <section class="favorites section" id="favorites">
+            <h2 class="section_title">Favorite</h2>
+            <span class="section_subtitle">What i like </span>
+            <div class="favorites_container container grid">
+                <!--==================== FAVORITE 1====================-->
+                <div class="favorites_content">
                     <div>
-                        <div class="contact_information">
-                            <i class="uil uil-phone contact_icon"></i>
-                            <div>
-                                <h3 class="contact_title">Call Me</h3>
-                                <span class="contact_subtitle">088-954-4722</span>
-                            </div>
-                        </div>
-                        <div class="contact_information">
-                            <i class="uil uil-envelope contact_icon"></i>
-                            <div>
-                                <h3 class="contact_title">Email</h3>
-                                <span class="contact_subtitle">krittamet.chan@gmail.com</span>
-                            </div>
-                        </div>
-                        <div class="contact_information">
-                            <i class="uil uil-map-marker contact_icon"></i>
-                            <div>
-                                <h3 class="contact_title">Location</h3>
-                                <span class="contact_subtitle">Pathum Thani - Thailand</span>
-                            </div>
+                        <i class="uil uil-web-grid favorites_icon"></i>
+                        <h3 class="favorites_title">UX/UI <br>Designer</h3>
+                    </div>
+                    <span class="button button_flex button_small button_link favorites_button">
+                        View More
+                        <i class="uil uil-arrow-right button_icon"></i>
+                    </span>
+                    <div class="favorites_modal">
+                        <div class="favorites_modal-content">
+                            <h4 class="favorites_modal-title">UX/UI <br>Designer</h4>
+                            <i class="uil uil-times favorites_modal-close"></i>
+                            <ul class="favorites_modal-favorites grid">
+                                <li class="favorites_modal-favorite">
+                                    <i class="uil uil-check-circle favorites_modal-icon"></i>
+                                    <p>I develop the user interface(Web/Mobile).</p>
+                                </li>
+                                <li class="favorites_modal-favorite">
+                                    <i class="uil uil-check-circle favorites_modal-icon"></i>
+                                    <p>Create ux element interactions.</p>
+                                </li>
+                            </ul>
                         </div>
                     </div>
+                </div>
+                <!--==================== FAVORITE 2====================-->
+                <div class="favorites_content">
+                    <div>
+                        <i class="uil uil-arrow favorites_icon"></i>
+                        <h3 class="favorites_title">Frontend <br>Developer</h3>
+                    </div>
+                    <span class="button button_flex button_small button_link favorites_button">
+                        View More
+                        <i class="uil uil-arrow-right button_icon"></i>
+                    </span>
+                    <div class="favorites_modal">
+                        <div class="favorites_modal-content">
+                            <h4 class="favorites_modal-title">Frontend <br>Developer</h4>
+                            <i class="uil uil-times favorites_modal-close"></i>
+                            <ul class="favorites_modal-favorites grid">
+                                <li class="favorites_modal-favorite">
+                                    <i class="uil uil-check-circle favorites_modal-icon"></i>
+                                    <p>I develop the user interface(Web/Mobile).</p>
+                                </li>
+                                <li class="favorites_modal-favorite">
+                                    <i class="uil uil-check-circle favorites_modal-icon"></i>
+                                    <p>Web/Mobile page devlopment.</p>
+                                </li>
+                                <li class="favorites_modal-favorite">
+                                    <i class="uil uil-check-circle favorites_modal-icon"></i>
+                                    <p>I create ux element interactions.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                    <form action="" class="contact_form grid">
-                        <div class="contact_input grid">
-                            <div class="contact_content">
-                                <label for="" class="contact_label">Name</label>
-                                <input type="text" class="contact_input">
-                            </div>
-                            <div class="contact_content">
-                                <label for="" class="contact_label">Email</label>
-                                <input type="email" class="contact_input">
-                            </div>
+        <!--==================== PORTFOLIO ====================-->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section_title">Portfolio</h2>
+            <span class="section_subtitle">Most recent work</span>
+            <div class="portfolio_container container swiper">
+                <div class="swiper-wrapper">
+                    <!--==================== PORTFOLIO 1====================-->
+                    <div class="portfolio_content grid swiper-slide">
+                        <img src="assets/img/port2.png" alt="" class="portfolio_img">
+                        <div class="portfolio_data">
+                            <h3 class="portfolio_title">Covid19 Website</h3>
+                            <p class="portfolio_description">This website show detail about Covid19 in Thailand
+                                adaptable to all device.</p>
+                            <a href="https://bosskritt.github.io/COVID19" target="_blank"
+                                class="button button_flex button_small portfolio_button">
+                                Visit this website
+                                <i class="uil uil-arrow-right button_icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--==================== PORTFOLIO 2====================-->
+                    <div class="portfolio_content grid swiper-slide">
+                        <img src="assets/img/port1.png" alt="" class="portfolio_img">
+                        <div class="portfolio_data">
+                            <h3 class="portfolio_title">Website Student Committee</h3>
+                            <p class="portfolio_description">This website show about member in student committee. This
+                                is my first website.</p>
+                            <a href="https://bosskritt.github.io/SC19/" target="_blank"
+                                class="button button_flex button_small portfolio_button">
+                                Visit this website
+                                <i class="uil uil-arrow-right button_icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!--==================== CONTACT ME ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section_title">Contact Me</h2>
+            <span class="section_subtitle">Get in touch</span>
+            <div class="contact_container container grid">
+                <div>
+                    <div class="contact_information">
+                        <i class="uil uil-phone contact_icon"></i>
+                        <div>
+                            <h3 class="contact_title">Call Me</h3>
+                            <span class="contact_subtitle">088-954-4722</span>
+                        </div>
+                    </div>
+                    <div class="contact_information">
+                        <i class="uil uil-envelope contact_icon"></i>
+                        <div>
+                            <h3 class="contact_title">Email</h3>
+                            <span class="contact_subtitle">krittamet.chan@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="contact_information">
+                        <i class="uil uil-map-marker contact_icon"></i>
+                        <div>
+                            <h3 class="contact_title">Location</h3>
+                            <span class="contact_subtitle">Pathum Thani - Thailand</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" class="contact_form grid">
+                    <div class="contact_input grid">
+                        <div class="contact_content">
+                            <label for="" class="contact_label">Name</label>
+                            <input type="text" class="contact_input">
                         </div>
                         <div class="contact_content">
-                            <label for="" class="contact_label">Message</label>
-                            <textarea name="" id="" cols="0" rows="7" class="contact_input"></textarea>
+                            <label for="" class="contact_label">Email</label>
+                            <input type="email" class="contact_input">
                         </div>
-                        <div>
-                            <a href="#" class="button button_flex">
-                                Send Message
-                                <i class="uil uil-message button_icon"></i>
-                            </a>
-                        </div>
-                    </form>
-                </div>
-            </section>
-        </main>
-
-        <!--==================== FOOTER ====================-->
-        <footer class="footer">
-            <div class="footer_bg">
-                <div class="footer_container container grid">
+                    </div>
+                    <div class="contact_content">
+                        <label for="" class="contact_label">Message</label>
+                        <textarea name="" id="" cols="0" rows="7" class="contact_input"></textarea>
+                    </div>
                     <div>
-                        <h1 class="footer_title">BossKritt</h1>
-                        <span class="footer_subtitle">Frontend Developer & UX/UI Designer</span>
-                    </div>
-                    <ul class="footer_links">
-                        <li>
-                            <a href="#favorites" class="footer_link">Favorite</a>
-                        </li>
-                        <li>
-                            <a href="#portfolio" class="footer_link">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#contact" class="footer_link">Contact</a>
-                        </li>
-                    </ul>
-                    <div class="footer_socials">
-                        <a href="https://www.facebook.com/Krittamet.Chanphet" target="_blank" class="footer_social">
-                            <i class="uil uil-facebook"></i>
-                        </a>
-                        <a href="https://line.me/ti/p/u8zvS03gtX" target="_blank" class="footer_social">
-                            <i class="uil uil-line"></i>
-                        </a>
-                        <a href="https://www.instagram.com/_bosskritt" target="_blank" class="footer_social">
-                            <i class="uil uil-instagram-alt"></i>
+                        <a href="#" class="button button_flex">
+                            Send Message
+                            <i class="uil uil-message button_icon"></i>
                         </a>
                     </div>
-                </div>
-                <p class="footer_copy">&#169; BossKritt. All right reserved</p>
+                </form>
             </div>
-            
-        </footer>
-        
-        <!--==================== SCROLL UP ====================-->
-        <a href="#" class="scrollup" id="scroll-up">
-            <i class="uil uil-arrow-up scrollup_icon"></i>
-        </a>
+        </section>
+    </main>
 
-        <!--==================== SWIPER JS ====================-->
-        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer_bg">
+            <div class="footer_container container grid">
+                <div>
+                    <h1 class="footer_title">BossKritt</h1>
+                    <span class="footer_subtitle">Frontend Developer & UX/UI Designer</span>
+                </div>
+                <ul class="footer_links">
+                    <li>
+                        <a href="#favorites" class="footer_link">Favorite</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="footer_link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer_link">Contact</a>
+                    </li>
+                </ul>
+                <div class="footer_socials">
+                    <a href="https://www.facebook.com/Krittamet.Chanphet" target="_blank" class="footer_social">
+                        <i class="uil uil-facebook"></i>
+                    </a>
+                    <a href="https://line.me/ti/p/u8zvS03gtX" target="_blank" class="footer_social">
+                        <i class="uil uil-line"></i>
+                    </a>
+                    <a href="https://www.instagram.com/_bosskritt" target="_blank" class="footer_social">
+                        <i class="uil uil-instagram-alt"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="footer_copy">&#169; BossKritt. All right reserved</p>
+        </div>
 
-        <!--==================== MAIN JS ====================-->
-        <script src="assets/js/main.js"></script>
-    </body>
+    </footer>
+
+    <!--==================== SCROLL UP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup_icon"></i>
+    </a>
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>

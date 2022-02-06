@@ -104,6 +104,7 @@ let swiper = new Swiper('.portfolio_container', {
         el: '.swiper-pagination',
         clickable: true
     },
+    keyboard: true
 });
 
 /*==================== TESTIMONIAL ====================*/
