@@ -720,8 +720,8 @@ img {
   right: -0.5rem;
 }
 
-.swiper {
-  padding-bottom: 10rem !important;
+.swiper-wrapper {
+  padding-bottom: 3.5rem;
 }
 
 .swiper-container-horizontal > .swiper-pagination-bullets {
